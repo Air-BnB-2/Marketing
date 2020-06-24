@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#first{
+    background-image: url(/images/Banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: 120% 180%;
+    background-position: 0 90%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+#first header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3%;
+}
+#header-links{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#header-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 10%;
+    text-shadow: 0 0 20px black;
+    padding: 2%;
+}
+#register{
+    background: rgba(255,255,255,.1);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(4px);
+    width: 18rem;
+}
+#about{
+    font-weight: 800;
+}
+#first header img{
+    width: 4rem;
+    height: 4rem;
+}
+#first h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+#first p{
+    max-width: 25%;
+    color: white;
+    font-size: 1.4rem;
+    padding: 1.5% 3%;
+    line-height: 1.4;
+}
+#second{
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+#second h2{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    color: #222222;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(180,180,180);
+}
+#devlist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+#devlist div{
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 3%;
+    padding-bottom: 3%;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(180,180,180);
+}
+#devlist p{
+    margin-left: 2%;
+}
+footer{
+    height: 70px;
+    background-color: #000000;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 70px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    margin-left: 2%;
+}
+#footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 600px;
+}
+#footer-links a{
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 2rem;
+}
+#footer-links a:hover{
+    color: #FF385C;
+}
+#footer-medias{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-medias img{
+    width: 40px;
+    height: 40px;
+}
+@media(max-width: 1200px){
+    #header-links a{
+        margin:0 5%;
+    }
+    #first h2{
+        margin-top: 2%;
+    }
+    #first p{
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    #devlist h3, #devlist p{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 1000px){
+    #header-links a{
+        margin: 0 3%;
+    }
+    #register{
+        width: 12rem;
+    }
+    #first p{
+        max-width: 35%;
+        text-shadow: 0 0 10px black;
+    }
+    #devlist h3, #devlist p{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 800px){
+    #first{
+        height: 60vw;
+        background-size: 100% 150%;
+    }
+    #first h2{
+        text-shadow: 0 0 10px black;
+    }
+    #first header a{
+        margin: 0;
+    }
+    #register{
+        width: 6rem;
+    }
+    #first header img{
+        width: 2.5rem;
+        height: 2.5rem
+    }
+    #first p{
+        max-width: 45%;
+    }
+    #devlist h3, #devlist p{
+        font-size: 1.2rem;
+    }
+    #footer-links a{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 600px){
+    #first p{
+        max-width: 75%;
+    }
+    #second{
+        height: 130vw;
+    }
+    #devlist div{
+        margin-left: 7.5%;
+        width: 85%;
+    }
+    #devlist h3, #devlist p{
+        font-size: 1.4rem;
+    }
+    #footer-links{
+        width: 75%;
+    }
+    #footer-medias{
+        display: none;
+    }
+}
